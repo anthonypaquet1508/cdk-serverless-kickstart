@@ -5,6 +5,7 @@ import {
 } from "aws-cdk-lib";
 import { Stack, StackProps } from "aws-cdk-lib";
 import { Construct } from 'constructs';
+import * as path from "path";
 
 export class StonyPlaygroundRegionalStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
@@ -40,7 +41,7 @@ export class StonyPlaygroundRegionalStack extends Stack {
       "helloWorld",
       {
         awsSdkConnectionReuse: true,
-        entry: "../src/lambdas/hello-world.ts",
+        entry: path.join(__dirname, "../src/lambdas/hello-world.ts"),
         ...functionSettings
       }
     );
