@@ -13,9 +13,7 @@ const lambdaHandler = async (event: any): Promise<any> => {
 
     metrics.addMetric('helloWorld', MetricUnits.Count, 1);
 
-    return {
-        body: JSON.stringify({ message: "Product not found" }),
-    };
+    return 'helloWorld';
 };
 
 const handler = middy(lambdaHandler)

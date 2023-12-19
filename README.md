@@ -1,15 +1,14 @@
 # CDK TypeScript kickstarter
 
-This is a boilerplate project for CDK development with TypeScript.
+This is a boilerplate project for CDK development with TypeScript. 
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+# Prerequisite
 
-## Useful commands
+* `CDK 2.x` https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html
+* `NodeJS 20.x` https://nodejs.org/en/download
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+## Kickstart commands
+
+* `cdk bootstrap`      Bootstrap CDK project
+* `cdk deploy`      Deploy this stack following configs (AWS account/region)
 
